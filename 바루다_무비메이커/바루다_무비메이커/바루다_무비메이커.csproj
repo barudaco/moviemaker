@@ -29,7 +29,7 @@
     <UpdateUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/published/</UpdateUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
-    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationRevision>23</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -68,10 +68,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>1F5E3CA14BB7D7EAA69F0C89AC3B14BA1CBF83C2</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>8DFE1DA6CE0330525F50998EC0BFBFED6F45FC98</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>바루다_무비메이커_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>key.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>바루다_무비메이커.App</StartupObject>
@@ -80,7 +80,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>바루다_무비메이커_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FFMediaToolkit, Version=4.1.2.0, Culture=neutral, PublicKeyToken=d189edefb5fd2265, processorArchitecture=MSIL">
@@ -173,51 +173,51 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="key.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="바루다_무비메이커_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ffmpeg\x86_64\bin\avcodec-58.dll">
+    <None Include="ffmpeg\x86_64\bin\avcodec-58.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\avdevice-58.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\avdevice-58.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\avfilter-7.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\avfilter-7.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\avformat-58.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\avformat-58.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\avutil-56.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\avutil-56.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\ffmpeg.exe">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\ffmpeg.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\ffplay.exe">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\ffplay.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\ffprobe.exe">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\ffprobe.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\postproc-55.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\postproc-55.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\swresample-3.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\swresample-3.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ffmpeg\x86_64\bin\swscale-5.dll">
+    </None>
+    <None Include="ffmpeg\x86_64\bin\swscale-5.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
