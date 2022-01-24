@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}</ProjectGuid>
+    <ProjectGuid>{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>baruda_movie_maker</RootNamespace>
-    <AssemblyName>baruda_movie_maker</AssemblyName>
+    <RootNamespace>moviemaker</RootNamespace>
+    <AssemblyName>moviemaker</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>published\</PublishUrl>
+    <PublishUrl>게시\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -25,8 +25,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/baruda_movie_maker/baruda_movie_maker/published/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/baruda_movie_maker/baruda_movie_maker/published/</UpdateUrl>
+    <InstallUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/moviemaker/moviemaker/게시/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/moviemaker/moviemaker/게시/</UpdateUrl>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
@@ -53,13 +53,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
+    <StartupObject>moviemaker.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>1F9707061C780C8B4513F2375661165A3C692ED7</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>2126E8D2C270A6EF03BDB195C1704787EC117C70</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>baruda_movie_maker_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>moviemaker_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -116,7 +119,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="baruda_movie_maker_TemporaryKey.pfx" />
+    <None Include="moviemaker_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "baruda_movie_maker", "baruda_movie_maker\baruda_movie_maker.csproj", "{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moviemaker", "moviemaker\moviemaker.csproj", "{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C78D369F-9DEF-4F1C-9184-62B8CA09F5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAB80140-59DE-4F60-99C0-5BF0E96F5A68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {037357F5-30DC-4A6C-83D1-D79569722481}
+		SolutionGuid = {1F9DE56A-77DD-4F5C-8633-E895497C3F0C}
 	EndGlobalSection
 EndGlobal
