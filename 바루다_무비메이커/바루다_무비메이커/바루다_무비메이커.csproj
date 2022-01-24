@@ -29,7 +29,7 @@
     <UpdateUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/published/</UpdateUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
-    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationRevision>24</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
