@@ -14,10 +14,10 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>published\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -25,9 +25,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/published/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/barudaco/moviemaker/main/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/%25EB%25B0%2594%25EB%25A3%25A8%25EB%258B%25A4_%25EB%25AC%25B4%25EB%25B9%2584%25EB%25A9%2594%25EC%259D%25B4%25EC%25BB%25A4/published/</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
