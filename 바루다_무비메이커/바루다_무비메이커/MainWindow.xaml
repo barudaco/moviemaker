@@ -1,0 +1,132 @@
+﻿<Window x:Class="바루다_무비메이커.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:바루다_무비메이커"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Background="LightGray"
+        
+        Title="[바루다] 무비메이커" Height="700" Width="600" WindowStartupLocation="CenterScreen" >
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox x:Name="그룹_경로" Grid.Row="0" Margin="5" Header="경로"  >
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!-- 이미지 경로 -->
+                <Label Grid.Row="0" Grid.Column="0" Content="이미지" VerticalAlignment="Center"  HorizontalAlignment="Center"  Margin="5,0"></Label>                
+                <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" >
+                     <Hyperlink  RequestNavigate="경로열기_RequestNavigate" NavigateUri="{Binding Source={StaticResource Settings}, Path=Default.PATH_이미지폴더}">
+                        <TextBlock Text="{Binding Source={StaticResource Settings}, Path=Default.PATH_이미지폴더}" TextTrimming="CharacterEllipsis"/>
+                    </Hyperlink>
+                </TextBlock>
+                
+                <Button x:Name="btn_경로변경_이미지" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" Content="변경" Margin="5,0" Padding="10,0,10,0" Click="btn_경로변경_이미지_Click"></Button>
+
+                <!-- 오디오 경로 -->
+                <Label Grid.Row="1" Grid.Column="0" Content="오디오" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0"></Label>
+                <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" >
+                     <Hyperlink  RequestNavigate="경로열기_RequestNavigate" NavigateUri="{Binding Source={StaticResource Settings}, Path=Default.PATH_오디오폴더}">
+                        <TextBlock Text="{Binding Source={StaticResource Settings}, Path=Default.PATH_오디오폴더}" TextTrimming="CharacterEllipsis"/>
+                    </Hyperlink>
+                </TextBlock>                
+                <Button x:Name="btn_경로변경_오디오" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Content="변경" Margin="5,0" Padding="10,0,10,0" Click="btn_경로변경_오디오_Click"></Button>
+
+                <!-- 출력 경로 -->
+                <Label Grid.Row="2" Grid.Column="0" Content="결과" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0"></Label>
+                <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="5,0" >
+                    <Hyperlink  RequestNavigate="경로열기_RequestNavigate" NavigateUri="{Binding Source={StaticResource Settings}, Path=Default.PATH_출력폴더}">
+                        <TextBlock Text="{Binding Source={StaticResource Settings}, Path=Default.PATH_출력폴더}" TextTrimming="CharacterEllipsis" />
+                    </Hyperlink>
+                </TextBlock>
+
+                <Button x:Name="btn_경로변경_출력" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Content="변경" Margin="5,0" Padding="10,0,10,0" Click="btn_경로변경_출력_Click"></Button>
+
+
+
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox x:Name="그룹_설정" Grid.Row="1" Margin="5" Header="설정" >
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="영상길이" VerticalAlignment="Center"  HorizontalAlignment="Center"  Margin="5"></Label>
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                    <xctk:IntegerUpDown x:Name="IntegerUpDown_동영상길이_최소" Width="80" Minimum="5" Maximum="600" Increment="1" Value="{Binding Source={StaticResource Settings}, Path=Default.동영상길이_최소}" ValueChanged="IntegerUpDown_동영상길이_최소_ValueChanged"/>
+                    <Label Content="초 ~ "/>
+                    <xctk:IntegerUpDown x:Name="IntegerUpDown_동영상길이_최대" Width="80" Minimum="5" Maximum="600" Increment="1" Value="{Binding Source={StaticResource Settings}, Path=Default.동영상길이_최대}" ValueChanged="IntegerUpDown_동영상길이_최대_ValueChanged"/>
+                    <Label Content="초"/>
+                </StackPanel>
+
+                <Label Grid.Row="1" Grid.Column="0" Content="사진개수" VerticalAlignment="Center"  HorizontalAlignment="Center"  Margin="5"></Label>
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                    <xctk:IntegerUpDown x:Name="IntegerUpDown_사진개수_최소" Width="80" Minimum="1"  Increment="1" Value="{Binding Source={StaticResource Settings}, Path=Default.사진개수_최소}" ValueChanged="IntegerUpDown_사진개수_최소_ValueChanged"/>
+                    <Label Content="개 ~ "/>
+                    <xctk:IntegerUpDown x:Name="IntegerUpDown_사진개수_최대" Width="80" Minimum="1"  Increment="1" Value="{Binding Source={StaticResource Settings}, Path=Default.사진개수_최대}" ValueChanged="IntegerUpDown_사진개수_최대_ValueChanged"/>
+                    <Label Content="개"/>
+                </StackPanel>
+
+
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox x:Name="그룹_작업" Grid.Row="2" Margin="5" Header="작업" >
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0"  Orientation="Horizontal" Margin="5">
+                    <Label Content="생성개수"></Label>
+                    <xctk:IntegerUpDown x:Name="IntegerUpDown_동영상생성개수" Width="80" Minimum="1" Increment="1" Value="{Binding Source={StaticResource Settings}, Path=Default.동영상생성개수}" ValueChanged="IntegerUpDown_동영상생성개수_ValueChanged"/>
+                    <Label Content="개"></Label>
+                </StackPanel>
+                <StackPanel Grid.Row="1"  Orientation="Horizontal" Margin="5">
+                    <Button x:Name="btn_START" Width="100" Height="40" Content="시작" Margin="5" Click="btn_START_Click"></Button>
+                    <Button x:Name="btn_STOP" Width="100" Height="40" Content="정지" Margin="5" Click="btn_STOP_Click"></Button>
+
+                    <Button x:Name="btn_movie2png" Width="100" Height="40" Content="movie to png" Margin="5" Click="btn_movie2png_Click"></Button>
+                </StackPanel>
+            </Grid>            
+         </GroupBox>
+
+        <GroupBox x:Name="그룹_작업로그" Grid.Row="3" Margin="5"  Header="작업로그" BorderThickness="2">
+            <ListBox x:Name="작업로그창" Grid.Row="1" Margin="5" ItemsSource="{Binding DebugMessage}" SelectionMode="Single" ScrollViewer.ScrollChanged="작업로그창_ScrollChanged" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Message}" Foreground="{Binding MessageColor}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </GroupBox>
+
+    </Grid>
+</Window>

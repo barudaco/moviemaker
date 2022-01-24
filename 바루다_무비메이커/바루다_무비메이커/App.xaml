@@ -1,0 +1,10 @@
+﻿<Application x:Class="바루다_무비메이커.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:바루다_무비메이커"
+             xmlns:properties="clr-namespace:바루다_무비메이커.Properties"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <properties:Settings x:Key="Settings" />
+    </Application.Resources>
+</Application>
