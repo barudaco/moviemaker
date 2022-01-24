@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="PATH_이미지폴더" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\비디오생성\input</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="PATH_오디오폴더" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

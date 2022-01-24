@@ -25,7 +25,7 @@ namespace 바루다_무비메이커.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\비디오생성\\input")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string PATH_이미지폴더 {
             get {
                 return ((string)(this["PATH_이미지폴더"]));
